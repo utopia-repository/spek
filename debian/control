@@ -1,7 +1,8 @@
 Source: spek
 Section: sound
 Priority: optional
-Maintainer: Alexander Kojevnikov <alexander@kojevnikov.com>
+Maintainer: James Lu (Utopia Repository) <james@overdrivenetworks.com>
+XSBC-Original-Maintainer: Alexander Kojevnikov <alexander@kojevnikov.com>
 Build-Depends: debhelper (>= 9),
                autotools-dev,
                pkg-config,
@@ -13,8 +14,8 @@ Build-Depends: debhelper (>= 9),
                wx-common
 Standards-Version: 3.9.6
 Homepage: http://spek.cc/
-Vcs-Git: git://github.com/alexkay/spek.git
-Vcs-Browser: https://github.com/alexkay/spek
+Vcs-Git: https://github.com/utopia-repository/spek
+Vcs-Browser: https://github.com/utopia-repository/spek
 
 Package: spek
 Architecture: any
