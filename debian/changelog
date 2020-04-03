@@ -1,11 +1,11 @@
-spek (0.8.2-4utopia1) UNRELEASED; urgency=medium
+spek (0.8.2.3+git11~084ce47-0utopia1) UNRELEASED; urgency=medium
 
   * Utopia Repository upload.
-  * Update homepage, watch to new upstream:
-    https://github.com/withmorten/spek-alternative
+  * New snapshot from new upstream: https://github.com/withmorten/spek-alternative
+    - Update homepage, watch files accordingly
   * Switch to GTK 3 version of wxwidgets / libwxgtk3.0-gtk3-dev (Closes: #933438)
 
- -- James Lu <james@overdrivenetworks.com>  Fri, 03 Apr 2020 12:59:49 -0700
+ -- James Lu <james@overdrivenetworks.com>  Fri, 03 Apr 2020 13:27:58 -0700
 
 spek (0.8.2-4) unstable; urgency=low
 
