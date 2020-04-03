@@ -1,6 +1,7 @@
 spek (0.8.2-4utopia1) UNRELEASED; urgency=medium
 
   * Utopia Repository upload.
+  * Update homepage to new upstream: https://github.com/withmorten/spek-alternative
 
  -- James Lu <james@overdrivenetworks.com>  Fri, 03 Apr 2020 12:59:49 -0700
 
