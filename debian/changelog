@@ -3,8 +3,10 @@ spek (0.8.2.3+git11~084ce47-0utopia1) UNRELEASED; urgency=medium
   * Utopia Repository upload.
   * New snapshot from new upstream: https://github.com/withmorten/spek-alternative
     - Update homepage, watch files accordingly
-  * Switch to GTK 3 version of wxwidgets / libwxgtk3.0-gtk3-dev (Closes: #933438)
-  * patches: drop, applied upstream
+  * Packaging updates:
+    - Switch to GTK 3 version of wxwidgets / libwxgtk3.0-gtk3-dev (Closes: #933438)
+    - patches: drop, applied upstream
+    - Switch to machine-readable debian/copyright format
 
  -- James Lu <james@overdrivenetworks.com>  Fri, 03 Apr 2020 13:27:58 -0700
 
