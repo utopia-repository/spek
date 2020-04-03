@@ -1,0 +1,40 @@
+From: James Lu <james@overdrivenetworks.com>
+Date: Fri, 3 Apr 2020 16:44:54 -0700
+Subject: test-audio: update to reflect reading multiple audio channels
+
+This was broken in 148e82adddff0e7f191b0ec6b7cd62910a919a5e.
+---
+ tests/test-audio.cc | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/tests/test-audio.cc b/tests/test-audio.cc
+index af673db..9745a6e 100644
+--- a/tests/test-audio.cc
++++ b/tests/test-audio.cc
+@@ -32,7 +32,7 @@ static void test_info(AudioFile *file, const FileInfo& info)
+ static void test_read(AudioFile *file, int samples)
+ {
+     if (!file->get_error()) {
+-        file->start(0, 1024);
++        file->start(1024);
+     }
+ 
+     int samples_read = 0;
+@@ -100,7 +100,7 @@ void test_audio()
+         {"2ch-44100Hz.ac3",
+             {AudioError::OK, "ATSC A/52", 192000, 44100, 0, 2, AC3_T, 4608}},
+         {"2ch-44100Hz-std.mpc",
+-            {AudioError::OK, "Musepack", 0, 44100, 0, 2, 0.0, 6912}},
++            {AudioError::OK, "Musepack", 0, 44100, 0, 2, 0.0, 11520 / 2}}, // not sure about this one -jlu5
+         {"2ch-44100Hz-v1.wma",
+             {AudioError::OK, "Windows Media Audio 1", 128000, 44100, 0, 2, 0.138, 6 * 1024}},
+         {"2ch-44100Hz-v2.wma",
+@@ -118,7 +118,7 @@ void test_audio()
+         );
+         run(
+             "audio read: " + name,
+-            [&] () { test_read(file.get(), info.samples); }
++            [&] () { test_read(file.get(), info.samples * info.channels); }
+         );
+     }
+ }
