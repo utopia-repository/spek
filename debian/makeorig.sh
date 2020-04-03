@@ -4,6 +4,7 @@
 set -e
 
 URL="https://github.com/withmorten/spek-alternative"
+FILES_EXCLUDED=("dist/debian")
 
 PACKAGE="$(dpkg-parsechangelog --show-field Source)"
 VERSION="$(dpkg-parsechangelog --show-field Version)"
@@ -25,9 +26,14 @@ echo "Using Git commit-ish: $COMMIT"
 set -x
 git clone "$URL" "${PACKAGE}-${ORIG_VERSION}"
 
-echo "# Generating archive from commit."
 pushd "${PACKAGE}-${ORIG_VERSION}"
-git archive -v "$COMMIT" -o "$OUTPATH"
+echo "# Writing .gitattributes file for FILES_EXCLUDED"
+for file in "${FILES_EXCLUDED[@]}"; do
+	echo "$file export-ignore" >> .gitattributes
+done
+
+echo "# Generating archive from commit."
+git archive -v "$COMMIT" -o "$OUTPATH" --worktree-attributes
 popd
 
 echo "# Removing temporary Git tree."

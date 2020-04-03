@@ -2,6 +2,7 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: spek-alternative
 Upstream-Contact: withmorten <morten.with@gmail.com>
 Source: https://github.com/withmorten/spek-alternative
+Files-Excluded: dist/debian/*
 
 Files: *
 Copyright: (C) 2010-2016 Alexander Kojevnikov <alexander@kojevnikov.com>
