@@ -3,7 +3,7 @@ Section: sound
 Priority: optional
 Maintainer: James Lu (Utopia Repository) <james@overdrivenetworks.com>
 XSBC-Original-Maintainer: Alexander Kojevnikov <alexander@kojevnikov.com>
-Build-Depends: debhelper (>= 9),
+Build-Depends: debhelper-compat (= 12),
                autotools-dev,
                pkg-config,
                intltool (>= 0.35),
