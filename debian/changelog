@@ -8,6 +8,7 @@ spek (0.8.2.3+git11~084ce47-0utopia1) UNRELEASED; urgency=medium
     - patches: drop, applied upstream
     - Switch to machine-readable debian/copyright format
     - Update to debhelper 12 (which automatically runs autoconf)
+      - Drop now redundant B-D: autotools-dev
     - Remove obsolete Debian menu files
     - Update to Standards-Version 4.5.0
 
