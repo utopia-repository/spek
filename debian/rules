@@ -9,7 +9,6 @@ override_dh_auto_clean:
 # Work around "config.status: error: po/Makefile.in.in was not created by intltoolize."
 # error, based off https://salsa.debian.org/gnome-team/tracker/-/commit/0d9fd0355a533ac4e0c87e35d9182c6d77500a5a
 override_dh_autoreconf:
-	intltoolize --automake
 	AUTOPOINT='intltoolize --automake --copy' autoreconf --verbose --force --install
 
 %:
