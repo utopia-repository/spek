@@ -1,7 +1,7 @@
-spek (0.8.2.3+git11~084ce47-0utopia1) UNRELEASED; urgency=medium
+spek (0.8.2.3+git11~084ce47-0utopia1) unstable; urgency=medium
 
   * Utopia Repository upload.
-  * New snapshot from new upstream: https://github.com/withmorten/spek-alternative
+  * Git snapshot from new upstream: https://github.com/withmorten/spek-alternative
     - Update homepage, watch files accordingly
   * Packaging updates:
     - Switch to GTK 3 version of wxwidgets / libwxgtk3.0-gtk3-dev (Closes: #933438)
@@ -12,7 +12,7 @@ spek (0.8.2.3+git11~084ce47-0utopia1) UNRELEASED; urgency=medium
     - Remove obsolete Debian menu files
     - Update to Standards-Version 4.5.0
 
- -- James Lu <james@overdrivenetworks.com>  Fri, 03 Apr 2020 13:27:58 -0700
+ -- James Lu <james@overdrivenetworks.com>  Fri, 03 Apr 2020 19:30:11 -0700
 
 spek (0.8.2-4) unstable; urgency=low
 
