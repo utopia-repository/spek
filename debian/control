@@ -12,7 +12,7 @@ Build-Depends: debhelper-compat (= 12),
                libavutil-dev (>= 6:0.8),
                libwxgtk3.0-gtk3-dev,
                wx-common
-Standards-Version: 3.9.6
+Standards-Version: 4.5.0
 Homepage: https://github.com/withmorten/spek-alternative
 Vcs-Git: https://github.com/utopia-repository/spek
 Vcs-Browser: https://github.com/utopia-repository/spek
